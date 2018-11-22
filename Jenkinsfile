@@ -22,8 +22,8 @@ cd %a%'''
 stage('Clone Repos')
 {
 
-    def a=env.BUILD_NUMBER+env.BUILD_TIMESTAMP
-  def b="c:\\Rohit\\Build_" + a +"_"
+    def a=env.BUILD_NUMBER+"_"+env.BUILD_TIMESTAMP
+  def b="c:\\Rohit\\Build_" + a 
   echo "${b}"
   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir:b]], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rohitgarde/RohitsJenkins.git']]])
 }
