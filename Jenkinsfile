@@ -5,11 +5,13 @@ stage('Git checkout')
 }
 stage('Make Directory')
 {
-   mkdir c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
+bat '''set a=c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
+mkdir %a%
+cd %a%'''
 
 }
 stage('Clone Repos')
 {
-"C:\Program Files\Git\cmd\git.exe" clone https://github.com/rohitgarde/RohitsJenkins.git
+git clone https://github.com/rohitgarde/RohitsJenkins.git
 }
 }
