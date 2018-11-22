@@ -5,7 +5,7 @@ stage('Git checkout')
 }
 stage('Make Directory')
 {
-   mkdir "c:\Rohit\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%"
+   mkdir c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
 
 }
 stage('Clone Repos')
