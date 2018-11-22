@@ -1,8 +1,9 @@
 node{
   environment{
-  
-  a='c:\\Rohit\\Rohit_jenkins_BUILD_NUMBER_BUILD_TIMESTAMP'
-    echo a
+  build=env.BUILD_NUMBER
+    ts=env.BUILD_TIMESTAMP
+    echo 'hurrray'
+    echo build
   }
 stage('Git checkout')
 {
