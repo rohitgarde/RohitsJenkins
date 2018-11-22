@@ -15,6 +15,6 @@ stage('Clone Repos')
   bat '''set a=c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
 
 cd %a%'''
-git url: 'https://github.com/rohitgarde/RohitsJenkins.git'
+git clone  'https://github.com/rohitgarde/RohitsJenkins.git'
 }
 }
