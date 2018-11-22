@@ -16,6 +16,8 @@ cd %a%'''
   echo 'hello'
   echo env.BUILD_NUMBER+env.BUILD_TIMESTAMP
   echo env.BUILD_NUMBER
+  
+  echo "${a}"
 
 }
 stage('Clone Repos')
