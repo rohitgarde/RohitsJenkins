@@ -2,7 +2,7 @@ node{
   environment{
   build=env.BUILD_NUMBER
     ts=env.BUILD_TIMESTAMP
-   
+   def a=env.BUILD_NUMBER+env.BUILD_TIMESTAMP
   }
 stage('Git checkout')
 {
@@ -14,6 +14,7 @@ bat '''set a=c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
 mkdir %a%
 cd %a%'''
   echo 'hello'
+  echo env.a
   echo env.BUILD_NUMBER
 
 }
