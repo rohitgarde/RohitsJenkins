@@ -12,6 +12,6 @@ cd %a%'''
 }
 stage('Clone Repos')
 {
-git clone https://github.com/rohitgarde/RohitsJenkins.git
+git clone 'https://github.com/rohitgarde/RohitsJenkins.git'
 }
 }
