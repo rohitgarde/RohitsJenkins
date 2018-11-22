@@ -12,6 +12,6 @@ cd %a%'''
 }
 stage('Clone Repos')
 {
- git clone  'https://github.com/rohitgarde/RohitsJenkins.git'
+ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rohitgarde/RohitsJenkins.git']]])
 }
 }
