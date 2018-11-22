@@ -23,6 +23,6 @@ stage('Clone Repos')
 
 cd %a%'''
   
-  checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir:'c:\\Rohit\\Rohit_jenkins_BUILD_NUMBER_BUILD_TIMESTAMP']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rohitgarde/RohitsJenkins.git']]])
+  checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir:'c:\\Rohit\\Rohit_jenkins_env.BUILD_NUMBER_env.BUILD_TIMESTAMP']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rohitgarde/RohitsJenkins.git']]])
 }
 }
