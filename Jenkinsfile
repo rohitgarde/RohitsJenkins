@@ -1,7 +1,7 @@
 node{
-  environmanet{
+  environment{
   
-  a=c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
+  a='c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%'
   }
 stage('Git checkout')
 {
