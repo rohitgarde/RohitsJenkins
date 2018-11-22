@@ -2,7 +2,7 @@ node{
   environment{
   build=env.BUILD_NUMBER
     ts=env.BUILD_TIMESTAMP
-   def a=env.BUILD_NUMBER+env.BUILD_TIMESTAMP
+  
   }
 stage('Git checkout')
 {
@@ -16,7 +16,7 @@ cd %a%'''
   echo 'hello'
   echo env.BUILD_NUMBER+env.BUILD_TIMESTAMP
   echo env.BUILD_NUMBER
-  
+   def a=env.BUILD_NUMBER+env.BUILD_TIMESTAMP
   echo "${a}"
 
 }
