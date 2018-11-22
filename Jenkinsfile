@@ -2,8 +2,7 @@ node{
   environment{
   build=env.BUILD_NUMBER
     ts=env.BUILD_TIMESTAMP
-    echo 'hurrray'
-    echo build
+   
   }
 stage('Git checkout')
 {
@@ -15,6 +14,7 @@ bat '''set a=c:\\Rohit\\Rohit_jenkins_%BUILD_NUMBER%_%BUILD_TIMESTAMP%
 mkdir %a%
 cd %a%'''
   echo 'hello'
+  echo env.build
 
 }
 stage('Clone Repos')
